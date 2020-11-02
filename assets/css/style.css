@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+color: #777777;
+font-family: Lato, Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #555555;
+}
+.logo-text {
+  font-size: 280%;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+}
+.header-links, .logo-text {
+margin: 0 15px 0 15px;
+}
+.menu {
+  display: flex;
+}
+.menu a {
+text-decoration: none;
+color: inherit;
+}
+.menu a:hover {
+  color: black;
+}
+header > nav  > ul > li {
+  display: inline;
+  margin: 0 5px 0 5px;
+  letter-spacing: 4px;
+}
+.hero-image {
+  background: url('/assets/images/main-image.jpg') center center no-repeat ;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  animation-name: hero-fade;
+  animation-duration: 3s;
+  display: flex;
+}
+#hero-section {
+  width: 100%;
+  height: 600px;
+}
+@keyframes hero-fade {
+    from {
+      opacity: 0.1; 
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.hero-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+.hero-text {
+  background:rgba(241, 109, 107, .7);
+  width: 300px;
+  color: white;
+  font-family: Oswald;
+  font-size: 120%;
+  text-align: left;
+  flex-wrap: wrap;
+  margin: 0 80px 40px;
+  padding: 45px;
+}
+.hero-text p {
+  font-family: Oswald;
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.flex {
+  display: flex;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.flexwrap {
+  flex-wrap: wrap;
+}
+.container {
+  width: 80vw;
+  margin: auto;
+}
+.ethos-heading {
+  font-size: 180%;
+}
+.left-wrapper {
+  flex:25%;
+}
+.middle {
+  flex: 50%;
+  margin: auto;
+}
+.right-wrapper {
+  flex:25%;
+}
+.left-content {
+  text-align: left;
+  margin: 30px 0;
+}
+.left-content h2 {
+  border-bottom: 1px solid grey;
+}
+.right-content {
+  text-align: right;
+  margin: 30px 0;
+}
+.right-content h2 {
+  border-bottom: 1px solid grey;
+}
+.circle {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+  border-radius: 100%;
+  padding: 30px;
+}
+.circle-img {
+  background: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png') center center no-repeat ;
+  border-radius: 50%;
+  height: 100%;
+}
+.running-events {
+  text-align: center;
+}
+#events-section {
+  background: url('/assets/images/dublin-city.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+#events-section .event-wrapper {
+  color: #fafafa;
+  background-color: rgba(0,0,0,0.4);
+  flex: 19%;
+  height: 300px;
+  padding: 30px 0 0 10px;
+  margin: 2px;
+}
+.event-wrapper h2 {
+  color: #fafafa;
+}
+footer {
+  height: 200px;
+}
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2%;
+  padding: 0;
+  list-style: none;
+}
+.social-links i {
+  font-size: 160%;
+  margin: 1%;
+  padding: 5%;
+  color: #777777;
+}
+.social-links i:hover {
+  color:rgba(241, 109, 107, .7);
+}
+#gallery {
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0;
+}
+#gallery img {
+  width: 100%;
+}
+@media screen and (max-width:943px) {
+  #gallery {
+  column-count: 3;
+  }
+}
+@media screen and (max-width:800px){
+ #gallery { column-count: 2;
+ }
+}
+/* form */
+
+.form-section {
+    clear: left;
+    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+.signup-form {
+  margin-top: 150px;
+  color: #fff;
+  background-color: rgba(60,60,60,0.6);
+  max-width: 400px;
+  position: absolute;
+  left: 10%;
+  padding: 30px;
+}
+.signup-form h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+.text-input {
+  background: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
+.text-input:hover {
+  border-color: #f16c6b;
+}
+.join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px 15px 32px;
+  text-align: center;
+  font-size: 100%;
+  background-color: #f16c6b;
+  color: #fafafa;
+  display: block;
+}
+.join-button:hover {
+  background-color: #fafafa;
+  color: #f16e6b;
+}
+
+
+/*end form*/
