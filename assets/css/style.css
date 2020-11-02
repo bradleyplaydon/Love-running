@@ -49,7 +49,7 @@ header > nav  > ul > li {
   letter-spacing: 4px;
 }
 .hero-image {
-  background: url('https://github.com/bradleyplaydon/Lone-running/blob/575e1c2086f864fd3e8a6533b268a9c87c8e97e8/assets/images/main-image.jpg') center center no-repeat ;
+  background: url('../images/main-image.jpg') center center no-repeat ;
   background-position: center;
   width: 100%;
   height: 600px;
@@ -154,7 +154,7 @@ header > nav  > ul > li {
   text-align: center;
 }
 #events-section {
-  background: url('https://github.com/bradleyplaydon/Lone-running/blob/575e1c2086f864fd3e8a6533b268a9c87c8e97e8/assets/images/dublin-city.jpg') no-repeat center;
+  background: url('../images/dublin-city.jpg') no-repeat center;
   background-size: cover;
   width: 100%;
   overflow: hidden;
